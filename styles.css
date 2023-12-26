@@ -38,6 +38,19 @@ h2::after {
     font-size: 0.8em;
 }
 
+
+
+nav {
+  display: flex;
+	border: 1px black solid;
+	border-radius: 10px;
+	justify-content: center;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+nav a {
+	display: inline-block;
+	margin: 0 10px;
+}
 footer {
     background-color: #333;
     color: white;
