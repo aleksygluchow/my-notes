@@ -1,88 +1,100 @@
-body {
-    font-family: "Comic Sans MS","Bradley Hand","Brush Script MT",  "Comic Sans", Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-	overflow-x: hidden;
+	body {
+		font-family: "Comic Sans MS","Bradley Hand","Brush Script MT",  "Comic Sans", Helvetica, Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f0f0f0;
+		overflow-x: hidden;
+	}
+
+	header {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		padding: 1em;
+	}
+
+	main {
+		max-width: 800px;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		padding: 1em;
+		bottom: 0;
+		width: 100%;
+	}
+
+
+
+	
+	.outer-container {
+    border: 2px solid black; /* Czarna zewnętrzna granica */
+    border-radius: 10px; /* Promień zaokrąglenia dla zewnętrznej granicy */
+    width: 100%; /* Dopasowuje szerokość do zawartości */
+    margin: 20px; /* Dostosuj zewnętrzny odstęp według potrzeb */
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    bottom: 0;
-    width: 100%;
-}
-
-.notatka{
-    outline: 2px solid black;
-    border-radius: 10px;
-	padding: 0;
-	margin: 10px 0 0 0;
-	background-color: #EEEEEE;
+.my-rounded-box {
+    border: 2px solid black; /* Czarna granica wewnątrz */
+    border-radius: 8px; /* Promień zaokrąglenia dla wewnętrznej granicy */
+    padding: 0; /* Dostosuj wewnętrzny odstęp według potrzeb */
 	box-shadow: 13px 8px 15px -10px rgba(66, 68, 90, 1);
 }
 
-.notatka h2 {
-	display: inline-block;
-	padding: 0 15px 0 10px;
-	margin: 0;
-    border-radius: 10px;
-}
-
-.notatka h2.date {
-	font-style: italic;
-	display: inline-block;
-	margin: 0;
-    border-radius: 10px;
-	float: right;
-}
-
-.notatka .h2cont {
-	display: inline-block;
-	width: 100%;
-	color: white;
-	background-color: rgb(136,0,21);
-	padding: 0;
-	margin: 0;
-    border-radius: 10px;
-}
-
-.notatka p {
-margin: 0;
-padding: 10px 0 0 0;
-background-color: transparent;
-}
-
-.notatka img{
-max-width : 400px;
-max-height: 300px;
-margin: 10px 0 0 0;
-border-radius: 10px 10px 10px 10px;
-}
-
-.notatka .cont{
-	padding: 0 20px 5px 20px;
-	margin: 0;	
-
-}
-
-div.cont{
-	margin: 0;
-	padding: 0;
+.my-rounded-box .h2cont {
+		display: inline-block;
+		width: 100%;
+		color: white;
+		background-color: rgb(136,0,21);
+		padding: 0;
+		margin: 0;
+		border-radius: 5px;
+	}
 	
+.my-rounded-box .h2cont h2 {
+		display: inline-block;
+		padding: 0 15px 0 10px;
+		margin: 0;
+		border-radius: 10px;
+	}
+	
+	H2.date{
+		float: right;
+	}
+	
+	
+	.my-rounded-box p {
+	margin: 0;
+	padding: 10px 0 0 0;
+	background-color: transparent;
+	}
+
+	.my-rounded-box img{
+	max-width : 400px;
+	max-height: 300px;
+	margin: 10px 0 0 0;
+	border-radius: 10px 10px 10px 10px;
+	}
+
+	.my-rounded-box .cont{
+		padding: 0 20px 5px 20px;
+		margin: 0;	
+
+	}
+
+	div.cont{
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+	
+	@media only screen and (max-width: 751px) {
+  .outer-container {
+    width: 90%;
+  }
 }
