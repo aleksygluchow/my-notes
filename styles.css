@@ -101,7 +101,6 @@
 			padding: 1em;
 			margin-top: 15px;
 			bottom: 0;
-			width: 100%;
 			z-index: 999;
 		}
 
@@ -163,6 +162,34 @@
 			nav a {
 				font-size: 10px;
 				}
+		.container{
+			align-items: center;
+			width: 100%;
+			display: flex;
+			flex-direction: column ;
+			justify-content: flex-start;
+
+		}
+		.contacts{
+		padding: 5%;
+		font-family: Courier;
+		}
+		
+		.contacts a:hover {
+			display: inline-block;
+			background-color: orange;
+		}
+		
+		
+		
+		.image {
+			max-width: 80%;
+		}
+		
+		.image img{
+			width: 100%; 
+		}
+
 
 		}
 		
