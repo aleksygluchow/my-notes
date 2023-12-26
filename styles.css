@@ -2,7 +2,7 @@ body {
     font-family: "Bradley Hand", "Brush Script MT", "Comic Sans MS", "Comic Sans", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: white;
 }
 
 header {
@@ -20,9 +20,9 @@ main {
 
 footer {
     background-color: #333;
-    color: yellow;
+    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 1em;
     margin: 1000px;
     position: fixed;
     bottom: 0;
