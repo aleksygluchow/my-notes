@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+	overflow-x: hidden;
 }
 
 header {
@@ -23,12 +24,65 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 .notatka{
-    border: 2px solid black;
-    border-radius: 25px;
+    outline: 2px solid black;
+    border-radius: 10px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	background-color: #EEEEEE;
+	box-shadow: 13px 8px 15px -10px rgba(66, 68, 90, 1);
+}
+
+.notatka h2 {
+	display: inline-block;
+	padding: 0 15px 0 10px;
+	margin: 0;
+    border-radius: 10px;
+}
+
+.notatka h2.date {
+	font-style: italic;
+	display: inline-block;
+	margin: 0;
+    border-radius: 10px;
+	float: right;
+}
+
+.notatka .h2cont {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background-color: rgb(136,0,21);
+	padding: 0;
+	margin: 0;
+    border-radius: 10px;
+}
+
+.notatka p {
+margin: 0;
+padding: 10px 0 0 0;
+background-color: transparent;
+}
+
+.notatka img{
+max-width : 400px;
+max-height: 300px;
+margin: 10px 0 0 0;
+border-radius: 10px 10px 10px 10px;
+}
+
+.notatka .cont{
+	padding: 0 20px 5px 20px;
+	margin: 0;	
+
+}
+
+div.cont{
+	margin: 0;
+	padding: 0;
+	
 }
