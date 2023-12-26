@@ -8,53 +8,34 @@
 </head>
 <body>
 
-    <header>
-        <h1>Notatki Aleksego</h1>
-    </header>
+<header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>Notatki Aleksego</h1>
+    <nav>
+        <a href="#">Strona główna</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Zdjęcia</a>
+    </nav>
+</header>
 
-    <main>		
-		
-		<div class="outer-container">
-		<div class="my-rounded-box">
-        <div class = "h2cont">
-		<h2 class = "title">Notatka nr2</h2><h2 class = "date">26.12.2023</h2>
-		</div>
-		
-		<div class = "cont">
-		<p>Druga notatka z innym kotkiem</p>
-		<img src = "cat2.jpg">
-		</div>
-		</div>
-		</div>
-		
-		<div class="outer-container">
-		<div class="my-rounded-box">
-        <div class = "h2cont">
-		<h2 class = "title">Notatka nr1</h2><h2 class = "date">26.12.2023</h2>
-		</div>
-		
-		<div class = "cont">
-		<p>Cześć ! Będę tu czasem wrzucał jakieś swoje rzeczy, jako że FB (w sumie już od dawna) tak się zeszpecił, że nie da się z niego korzystać .  
-		</p>
-		<img src = "cat.jpg">
-		</div>
-		</div>
-		</div>
+<main>
+    <h2 data-date="26 grudnia 2023">Notatka 2</h2>
+    <div>To jest d notatka</div>
 
+    <h2 data-date="25 grudnia 2023">Notatka 1</h2>
+    <div>To jest pierwsza notatka</div>
+</main>
 
+<footer>
+    <p>&copy; 2023 Aleksy Głuchow</p>
+</footer>
 
-		
-		
-		
-		
-		
-    </main>
-
-
-
-    <footer>
-        <p>&copy; 2023 Aleksy Głuchow</p>
-    </footer>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('open');
+    }
+</script>
 
 </body>
 </html>
