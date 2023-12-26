@@ -45,7 +45,7 @@
     // create a new `Date` object
     const now = new Date();
 
-    // options for formatting date and time in Polish
+    // options for formatting date and time in Polish without 'o'
     const options = {
       year: 'numeric',
       month: 'long',
@@ -54,6 +54,8 @@
       minute: 'numeric',
       second: 'numeric',
       hour12: false,
+      weekday: undefined,
+      era: undefined,
     };
 
     // get the current date and time as a string in Polish format
@@ -69,6 +71,7 @@
   // initial call to display the date and time immediately
   updateDateTime();
 </script>
+
 
 <footer>
     <p>&copy; 2023 Aleksy Głuchow</p>
