@@ -97,4 +97,7 @@
   .outer-container {
     width: 90%;
   }
+img {
+max-width: 90%;
+}
 }
