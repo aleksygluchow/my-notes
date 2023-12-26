@@ -39,7 +39,7 @@
 }
 
 .my-rounded-box {
-    border: 2px solid black; /* Czarna granica wewnątrz */
+    border: 1px solid black; /* Czarna granica wewnątrz */
     border-radius: 8px; /* Promień zaokrąglenia dla wewnętrznej granicy */
     padding: 0; /* Dostosuj wewnętrzny odstęp według potrzeb */
 	box-shadow: 13px 8px 15px -10px rgba(66, 68, 90, 1);
