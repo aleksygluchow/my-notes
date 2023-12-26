@@ -1,207 +1,71 @@
-		body {
-			font-family: Verdana, Helvetica, Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			background-color: #f0f0f0;
-			overflow-x: hidden;
-		}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakty Aleksego</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-		header {
-			background-color: #333;
-			color: white;
-			text-align: center;
-			padding: 1em;
-			position: relative;
-			margin: auto auto 0 auto;
-			border-radius: 0 0 10px 10px;
-		}
+<header>
+    <h1>Kontakty Aleksego</h1>
+    <span id="datetime"></span>
+</header>
 
-		main {
-			max-width: 800px;
-			margin: 0px auto;
-			padding: 10px 0 0 0;
-		}
+<main>
+	
+    <nav>
+	<a href="index.html">Strona główna</a>
+	<a href="contact.html">Kontakt</a>
+	<a href="photos.html">Zdjęcia</a>
+	</nav>
 
-		h1 {
-			margin: 5px 0;
-		}
+    
+    <div class="container">
+    <div class="contacts">
+      Email: <a href="mailto:aleksy.gluchow@gmail.com">aleksy.gluchow@gmail.com</a>
+	  <br>FB: <a href = "fb.com/aleksy.gluchow">fb.com/aleksy.gluchow</a>
+	  <br><a href = "https://pl.wikipedia.org/wiki/Polska"><img src = "poland.png" class="flag"></a>
+	</div>
+    <div class="image">
+      <img src = "contact.jpg">
+    </div>
+</main>
+<script>
+  // create a function to update the date and time
+  function updateDateTime() {
+    // create a new `Date` object
+    const now = new Date();
 
-		h2 {
-			border-bottom: 2px solid #333;
-			padding-bottom: 5px;
-			margin: 5px 0 5px 0;
-			position: relative;
-			font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
-			font-size: 15px;
-		}
+    // options for formatting date and time in Polish
+    const options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      hour12: false,
+    };
 
-		h2:hover {
-			color: MediumSeaGreen;
-		}
+    // get the current date and time as a string in Polish format
+    const currentDateTime = now.toLocaleString('pl-PL', options);
 
-		h2::after {
-			content: attr(data-date);
-			display:block;
-			display:-webkit-block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			color: #666;
-			white-space: nowrap;
-			font-size: 0.8em;
-		}
+    // update the `textContent` property of the `span` element with the `id` of `datetime`
+    document.querySelector('#datetime').textContent = currentDateTime;
+  }
 
+  // call the `updateDateTime` function every second
+  setInterval(updateDateTime, 1000);
 
+  // initial call to display the date and time immediately
+  updateDateTime();
+</script>
 
-		nav {
-			display: flex;
-			display: -webkit-flex;
-			border: 1px black solid;
-			border-radius: 10px;
-			justify-content: center;
-			box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-			padding: 10px 0;
-			margin: 0 auto 0 auto;
-		}
-		nav a {
-			display: block;
-			display: -inline-block;
-			margin: 0 10px;
-			text-transform: uppercase;
-			font-weight: bold;
-			font-size: 16px;
-		}
+<footer>
+    <p>&copy; 2023 Aleksy Głuchow</p>
+</footer>
 
-		nav a:hover {
-			color: red;
-		}
-
-		.imgBlog{
-			width : 240px;
-			max-height: 251px;
-			margin: 8px;
-			border: 2px solid white;
-			border-radius: 5px;
-			
-			-webkit-box-shadow: 8px 8px 20px -16px rgba(66, 68, 90, 1);
-			-moz-box-shadow: 8px 8px 20px -16px rgba(66, 68, 90, 1);
-			box-shadow: 8px 8px 20px -16px rgba(66, 68, 90, 1);
-		}
-
-		.imgBlog:hover{
-			border: 2px solid DarkBlue;
-			-webkit-box-shadow: 5px 5px 20px -16px rgba(66, 68, 90, 1);
-			-moz-box-shadow: 5px 5px 20px -16px rgba(66, 68, 90, 1);
-			box-shadow: 5px 5px 20px -16px rgba(66, 68, 90, 1);
-			border-radius: 0px;
-		}
-
-
-		footer {
-			background-color: #444;
-			color: white;
-			text-align: center;
-			padding: 1em;
-			margin-top: 15px;
-			bottom: 0;
-			z-index: 999;
-		}
-
-		#datetime {
-			display: block;
-			display: -inline-block;
-			padding: 0;
-			margin: 0;
-			color: #999;
-			font-style: italic;
-			font-size: 16px;
-		}
-		
-		.flag{
-			height: 16px;
-		}
-		
-		.container{
-			width: 100%;
-			display: inline-flex;
-			display: -webkit-inline-flex;
-			justify-content: space-between;
-
-		}
-		.contacts{
-		padding: 5%;
-		font-family: Courier;
-		}
-		
-		.contacts a:hover {
-			display: inline-block;
-			display: -webkit-inline-block;
-			background-color: orange;
-		}
-		
-		
-		
-		.image {
-			margin: 5%;
-			width: 40%;
-		}
-		
-		.image img{
-			width: 100%; 
-		}
-		
-		
-		
-		
-		
-		
-
-
-		@media only screen and (max-width: 600px) {
-			main {
-				padding: 10px;
-			}
-			.imgBlog{
-				max-width : 43%;
-				max-height: 200px;
-			}
-			nav a {
-				font-size: 10px;
-				}
-		.container{
-			align-items: center;
-			width: 100%;
-			display:flex;
-			display:-webkit-flex;
-			flex-direction: column ;
-			justify-content: flex-start;
-
-		}
-		.contacts{
-		padding: 5%;
-		font-family: Courier;
-		}
-		
-		.contacts a:hover {
-			display:-webkit-inline-block;
-			background-color: orange;
-		}
-		
-		
-		
-		.image {
-			max-width: 80%;
-		}
-		
-		.image img{
-			width: 100%; 
-		}
-
-
-		}
-		
-		
-		
-		
-		
-		
+</body>
+</html>
