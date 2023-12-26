@@ -45,7 +45,7 @@
     // create a new `Date` object
     const now = new Date();
 
-    // options for formatting date and time in Polish without 'o'
+    // options for formatting date and time in Polish
     const options = {
       year: 'numeric',
       month: 'long',
@@ -54,15 +54,16 @@
       minute: 'numeric',
       second: 'numeric',
       hour12: false,
-      weekday: undefined,
-      era: undefined,
     };
 
     // get the current date and time as a string in Polish format
     const currentDateTime = now.toLocaleString('pl-PL', options);
 
+    // remove the 'o' from the output
+    const formattedDateTime = currentDateTime.replace(' o', '');
+
     // update the `textContent` property of the `span` element with the `id` of `datetime`
-    document.querySelector('#datetime').textContent = currentDateTime;
+    document.querySelector('#datetime').textContent = formattedDateTime;
   }
 
   // call the `updateDateTime` function every second
@@ -71,6 +72,7 @@
   // initial call to display the date and time immediately
   updateDateTime();
 </script>
+
 
 
 <footer>
