@@ -10,6 +10,7 @@
 
 <header>
     <h1>Kontakty Aleksego</h1>
+    <span id="datetime"></span>
 </header>
 
 <main>
@@ -20,12 +21,46 @@
 	<a href="photos.html">Zdjęcia</a>
 	</nav>
 
-    <h2 data-date="26 grudnia 2023">Notatka 2</h2>
-    <div>To jest d notatka</div>
-
-    <h2 data-date="25 grudnia 2023">Notatka 1</h2>
-    <div>To jest pierwsza notatka</div>
+    
+    <div class="container">
+    <div class="contacts">
+      Email: <a href="mailto:aleksy.gluchow@gmail.com">aleksy.gluchow@gmail.com</a>
+	  <br>FB: <a href = "fb.com/aleksy.gluchow">fb.com/aleksy.gluchow</a>
+    </div>
+    <div class="image">
+      <img src = "contact.jpg">
+    </div>
 </main>
+<script>
+  // create a function to update the date and time
+  function updateDateTime() {
+    // create a new `Date` object
+    const now = new Date();
+
+    // options for formatting date and time in Polish
+    const options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      hour12: false,
+    };
+
+    // get the current date and time as a string in Polish format
+    const currentDateTime = now.toLocaleString('pl-PL', options);
+
+    // update the `textContent` property of the `span` element with the `id` of `datetime`
+    document.querySelector('#datetime').textContent = currentDateTime;
+  }
+
+  // call the `updateDateTime` function every second
+  setInterval(updateDateTime, 1000);
+
+  // initial call to display the date and time immediately
+  updateDateTime();
+</script>
 
 <footer>
     <p>&copy; 2023 Aleksy Głuchow</p>
