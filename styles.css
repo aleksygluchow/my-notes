@@ -94,18 +94,13 @@
 	
 	
 @media only screen and (max-width: 800px) {
-
-	
-    body{
-	overflow-x: hidden;
-    }
 	
     main {
         padding: 10px; /* Уменьшаем внутренний отступ */
     }
 
     .outer-container {
-        margin: 10px; /* Уменьшаем внешний отступ */
+        padding: 10px; /* Уменьшаем внешний отступ */
     }
 
     .my-rounded-box .h2cont h2 {
