@@ -93,5 +93,11 @@
 	}
 	
 	
-	
+	@media only screen and (max-width: 768px) {
+  .outer-container {
+    width: 90%;
+  }
+  img{
+	  width: 600px;
+  }
 }
