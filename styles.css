@@ -150,6 +150,17 @@
 			width: 100%; 
 		}
 		
+		.notatka iframe{
+			width : 80%;
+			margin: 0 auto;
+			border-image: url('border-image.png');
+			border-image-slice: 120;
+			border-image-repeat: stretch;
+			height : 300px;
+			border-width: 25px;
+			border-style: solid;
+		}
+		
 		
 		
 		
@@ -199,9 +210,15 @@
 	}		
 
 
-		.notatka inframe{
-			width : 80%;
-			border: 2px solid black;
+		.notatka iframe{
+			width : 90%;
+			margin: 0 auto;
+			border-image: url('border-image.png');
+			border-image-slice: 120;
+			border-image-repeat: stretch;
+			height : 300px;
+			border-width: 25px;
+			border-style: solid;
 		}
 		
 		
