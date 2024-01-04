@@ -197,7 +197,12 @@
 			width: 100%; 
 		}
 	}		
-		
+
+
+		.notatka inframe{
+			width : 80%;
+			border: 2px solid black;
+		}
 		
 		
 		
